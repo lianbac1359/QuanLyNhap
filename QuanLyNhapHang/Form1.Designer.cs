@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlside = new System.Windows.Forms.Panel();
+            this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnPhieu = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnHangHoa = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             // pnlside
             // 
             this.pnlside.BackColor = System.Drawing.Color.DimGray;
+            this.pnlside.Controls.Add(this.btnHoaDon);
             this.pnlside.Controls.Add(this.btnPhieu);
             this.pnlside.Controls.Add(this.btnNhanVien);
             this.pnlside.Controls.Add(this.btnHangHoa);
@@ -59,6 +61,24 @@
             this.pnlside.TabIndex = 1;
             this.pnlside.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseMove);
             // 
+            // btnHoaDon
+            // 
+            this.btnHoaDon.BackColor = System.Drawing.Color.DimGray;
+            this.btnHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDon.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.Image = global::QuanLyNhapHang.Properties.Resources.bill_24px;
+            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 329);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(200, 49);
+            this.btnHoaDon.TabIndex = 5;
+            this.btnHoaDon.Text = "HÓA ĐƠN";
+            this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            // 
             // btnPhieu
             // 
             this.btnPhieu.BackColor = System.Drawing.Color.DimGray;
@@ -69,7 +89,7 @@
             this.btnPhieu.ForeColor = System.Drawing.Color.White;
             this.btnPhieu.Image = global::QuanLyNhapHang.Properties.Resources.记事本_notepad__1_;
             this.btnPhieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhieu.Location = new System.Drawing.Point(0, 370);
+            this.btnPhieu.Location = new System.Drawing.Point(0, 283);
             this.btnPhieu.Name = "btnPhieu";
             this.btnPhieu.Size = new System.Drawing.Size(200, 49);
             this.btnPhieu.TabIndex = 3;
@@ -88,7 +108,7 @@
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.Image = global::QuanLyNhapHang.Properties.Resources.人员_people_1_;
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(0, 297);
+            this.btnNhanVien.Location = new System.Drawing.Point(0, 237);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(200, 49);
             this.btnNhanVien.TabIndex = 2;
@@ -107,7 +127,7 @@
             this.btnHangHoa.ForeColor = System.Drawing.Color.White;
             this.btnHangHoa.Image = global::QuanLyNhapHang.Properties.Resources.广告产品_ad_product_1_;
             this.btnHangHoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHangHoa.Location = new System.Drawing.Point(0, 220);
+            this.btnHangHoa.Location = new System.Drawing.Point(0, 193);
             this.btnHangHoa.Name = "btnHangHoa";
             this.btnHangHoa.Size = new System.Drawing.Size(200, 49);
             this.btnHangHoa.TabIndex = 3;
@@ -246,6 +266,7 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Panel mainpanel;
         private System.Windows.Forms.Label lblmain;
+        private System.Windows.Forms.Button btnHoaDon;
     }
 }
 

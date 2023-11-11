@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvPhieu = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnPrintPhieu = new System.Windows.Forms.Button();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.dtpdayNhap = new System.Windows.Forms.DateTimePicker();
             this.txtMaNV = new System.Windows.Forms.TextBox();
@@ -81,34 +82,33 @@
             // 
             // dgvPhieu
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPhieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhieu.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvPhieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhieu.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPhieu.Location = new System.Drawing.Point(3, 30);
             this.dgvPhieu.Name = "dgvPhieu";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhieu.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhieu.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPhieu.RowHeadersWidth = 51;
             this.dgvPhieu.RowTemplate.Height = 24;
             this.dgvPhieu.Size = new System.Drawing.Size(893, 241);
@@ -127,6 +127,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Aquamarine;
+            this.groupBox2.Controls.Add(this.btnPrintPhieu);
             this.groupBox2.Controls.Add(this.txtThanhTien);
             this.groupBox2.Controls.Add(this.dtpdayNhap);
             this.groupBox2.Controls.Add(this.txtMaNV);
@@ -159,6 +160,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
+            // btnPrintPhieu
+            // 
+            this.btnPrintPhieu.BackColor = System.Drawing.Color.DimGray;
+            this.btnPrintPhieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPrintPhieu.FlatAppearance.BorderSize = 0;
+            this.btnPrintPhieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrintPhieu.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrintPhieu.ForeColor = System.Drawing.Color.White;
+            this.btnPrintPhieu.Image = global::QuanLyNhapHang.Properties.Resources.printer_24px;
+            this.btnPrintPhieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrintPhieu.Location = new System.Drawing.Point(415, 264);
+            this.btnPrintPhieu.Name = "btnPrintPhieu";
+            this.btnPrintPhieu.Size = new System.Drawing.Size(187, 38);
+            this.btnPrintPhieu.TabIndex = 35;
+            this.btnPrintPhieu.Text = "In phiếu";
+            this.btnPrintPhieu.UseVisualStyleBackColor = false;
+            this.btnPrintPhieu.Click += new System.EventHandler(this.btnPrintPhieu_Click);
+            // 
             // txtThanhTien
             // 
             this.txtThanhTien.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,7 +199,7 @@
             // txtMaNV
             // 
             this.txtMaNV.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.Location = new System.Drawing.Point(138, 293);
+            this.txtMaNV.Location = new System.Drawing.Point(136, 287);
             this.txtMaNV.Multiline = true;
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(201, 28);
@@ -209,7 +228,7 @@
             // txtMaHang
             // 
             this.txtMaHang.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHang.Location = new System.Drawing.Point(136, 242);
+            this.txtMaHang.Location = new System.Drawing.Point(136, 250);
             this.txtMaHang.Multiline = true;
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(201, 28);
@@ -337,12 +356,11 @@
             "Trạng thái",
             "Địa chỉ",
             "Thành tiền",
-            "Mã nhà cung cấp",
             "Mã hàng",
             "Mã nhân viên"});
-            this.cbxPhieu.Location = new System.Drawing.Point(402, 200);
+            this.cbxPhieu.Location = new System.Drawing.Point(415, 200);
             this.cbxPhieu.Name = "cbxPhieu";
-            this.cbxPhieu.Size = new System.Drawing.Size(200, 27);
+            this.cbxPhieu.Size = new System.Drawing.Size(187, 27);
             this.cbxPhieu.TabIndex = 6;
             // 
             // btnTimKiemNhaCC
@@ -496,5 +514,6 @@
         private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.DateTimePicker dtpdayNhap;
         private System.Windows.Forms.DataGridView dgvPhieu;
+        private System.Windows.Forms.Button btnPrintPhieu;
     }
 }

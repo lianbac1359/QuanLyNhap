@@ -25,6 +25,7 @@ namespace QuanLyNhapHang
             InitializeComponent();
         }
         
+
         public void loadform(object Form)
         {
             if (this.mainpanel.Controls.Count > 0)
@@ -51,6 +52,7 @@ namespace QuanLyNhapHang
             btnHangHoa.BackColor = Color.DimGray;
             btnNhanVien.BackColor = Color.DimGray;
             btnPhieu.BackColor = Color.DimGray;
+            btnHoaDon.BackColor = Color.DimGray;
         }
 
         private void btnHangHoa_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace QuanLyNhapHang
             btnHangHoa.BackColor = Color.Orange;
             btnNhanVien.BackColor = Color.DimGray;
             btnPhieu.BackColor = Color.DimGray;
+            btnHoaDon.BackColor = Color.DimGray;
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -79,6 +82,7 @@ namespace QuanLyNhapHang
             btnHangHoa.BackColor = Color.DimGray;
             btnNhanVien.BackColor = Color.GreenYellow;
             btnPhieu.BackColor = Color.DimGray;
+            btnHoaDon.BackColor = Color.DimGray;
         }
 
         private void btnPhieu_Click(object sender, EventArgs e)
@@ -93,8 +97,22 @@ namespace QuanLyNhapHang
             btnHangHoa.BackColor = Color.DimGray;
             btnNhanVien.BackColor = Color.DimGray;
             btnPhieu.BackColor = Color.LightSeaGreen;
+            btnHoaDon.BackColor = Color.DimGray;
         }
-
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            pcBheader.Visible = false;
+            pcBheader.Image = Properties.Resources.人员_people;
+            pcBheader.Visible = true;
+            loadform(new HoaDon());
+            lblmain.Text = "Hóa Đơn";
+            btnNhaCC.BackColor = Color.DimGray;
+            pnlHeader.BackColor = Color.Aqua;
+            btnHangHoa.BackColor = Color.DimGray;
+            btnNhanVien.BackColor = Color.DimGray;
+            btnPhieu.BackColor = Color.DimGray;
+            btnHoaDon.BackColor = Color.Aqua;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -58,9 +58,8 @@ namespace QuanLyNhapHang
                 txtTrangThai.Text = dgvPhieu.Rows[i].Cells[2].Value.ToString();
                 txtDiaChi.Text = dgvPhieu.Rows[i].Cells[3].Value.ToString();
                 txtThanhTien.Text = dgvPhieu.Rows[i].Cells[4].Value.ToString();
-                txtMaNCC.Text = dgvPhieu.Rows[i].Cells[5].Value.ToString();
-                txtMaHang.Text = dgvPhieu.Rows[i].Cells[6].Value.ToString();
-                txtMaNV.Text = dgvPhieu.Rows[i].Cells[7].Value.ToString();
+                txtMaHang.Text = dgvPhieu.Rows[i].Cells[5].Value.ToString();
+                txtMaNV.Text = dgvPhieu.Rows[i].Cells[6].Value.ToString();
             }
         }
 
@@ -73,7 +72,6 @@ namespace QuanLyNhapHang
             cmd.Parameters.AddWithValue("TrangthaiSP", txtTrangThai.Text);
             cmd.Parameters.AddWithValue("DiaChiSP", txtDiaChi.Text);
             cmd.Parameters.AddWithValue("ThanhTien", txtThanhTien.Text);
-            cmd.Parameters.AddWithValue("MaNCC", txtMaNCC.Text);
             cmd.Parameters.AddWithValue("MaHang", txtMaHang.Text);
             cmd.Parameters.AddWithValue("MaNV", txtMaNV.Text);
             cmd.ExecuteNonQuery();
@@ -87,14 +85,13 @@ namespace QuanLyNhapHang
 
         private void btnSuaPhieu_Click(object sender, EventArgs e)
         {
-            string sqlEDIT = "UPDATE PhieuNhapKho SET NgayNhap = @NgayNhap,TrangthaiSP = @TrangthaiSP,DiaChiSP = @DiaChiSP,ThanhTien = @ThanhTien,MaNCC = @MaNCC,MaHang =@MaHang,MaNV = @MaNV where SoPhieuNhap =@SoPhieuNhap";
+            string sqlEDIT = "UPDATE PhieuNhapKho SET NgayNhap = @NgayNhap,TrangthaiSP = @TrangthaiSP,DiaChiSP = @DiaChiSP,ThanhTien = @ThanhTien,MaHang =@MaHang,MaNV = @MaNV where SoPhieuNhap =@SoPhieuNhap";
             SqlCommand cmd = new SqlCommand(sqlEDIT, con_Phieu);
             cmd.Parameters.AddWithValue("SoPhieuNhap", txtSoPhieu.Text);
             cmd.Parameters.AddWithValue("NgayNhap", dtpdayNhap.Text);
             cmd.Parameters.AddWithValue("TrangthaiSP", txtTrangThai.Text);
             cmd.Parameters.AddWithValue("DiaChiSP", txtDiaChi.Text);
             cmd.Parameters.AddWithValue("ThanhTien", txtThanhTien.Text);
-            cmd.Parameters.AddWithValue("MaNCC", txtMaNCC.Text);
             cmd.Parameters.AddWithValue("MaHang", txtMaHang.Text);
             cmd.Parameters.AddWithValue("MaNV", txtMaNV.Text);
             cmd.ExecuteNonQuery();
@@ -103,14 +100,13 @@ namespace QuanLyNhapHang
 
         private void btnThemPhieu_Click(object sender, EventArgs e)
         {
-            string sqlAdd = "INSERT INTO PhieuNhapKho VALUES (@SoPhieuNhap, @NgayNhap, @TrangthaiSP, @DiaChiSP, @ThanhTien, @MaNCC, @MaHang, @MaNV)";
+            string sqlAdd = "INSERT INTO PhieuNhapKho VALUES (@SoPhieuNhap, @NgayNhap, @TrangthaiSP, @DiaChiSP, @ThanhTien, @MaHang, @MaNV)";
             SqlCommand cmd = new SqlCommand(sqlAdd, con_Phieu);
             cmd.Parameters.AddWithValue("SoPhieuNhap", txtSoPhieu.Text);
             cmd.Parameters.AddWithValue("NgayNhap", dtpdayNhap.Text);
             cmd.Parameters.AddWithValue("TrangthaiSP", txtTrangThai.Text);
             cmd.Parameters.AddWithValue("DiaChiSP", txtDiaChi.Text);
             cmd.Parameters.AddWithValue("ThanhTien", txtThanhTien.Text);
-            cmd.Parameters.AddWithValue("MaNCC", txtMaNCC.Text);
             cmd.Parameters.AddWithValue("MaHang", txtMaHang.Text);
             cmd.Parameters.AddWithValue("MaNV", txtMaNV.Text);
             cmd.ExecuteNonQuery();
@@ -137,9 +133,6 @@ namespace QuanLyNhapHang
                 case "Thành tiền":
                     searchField = "ThanhTien";
                     break;
-                case "Mã nhà cung cấp":
-                    searchField = "MaNCC";
-                    break;
                 case "Mã hàng":
                     searchField = "MaHang";
                     break;
@@ -157,6 +150,10 @@ namespace QuanLyNhapHang
             dgvPhieu.DataSource = dt;
         }
 
-        
+        private void btnPrintPhieu_Click(object sender, EventArgs e)
+        {
+            PrintPhieu frm1 = new PrintPhieu();
+            frm1.ShowDialog();
+        }
     }
 }
